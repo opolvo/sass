@@ -1,0 +1,51 @@
+// Circle Buttons 
+
+.btn-circle {
+	width: $extra-button-size;
+	height: $extra-button-size;
+	padding: 6px 0;
+	border-radius: 15px;
+	text-align: center;
+	font-size: 12px;
+	line-height: 1.428571429;
+	
+	&-md {
+		width: $extra-button-md-size;
+		height: $extra-button-md-size;
+		padding: $extra-button-padding;
+		border-radius: 25px;
+		font-size: 18px;
+		line-height: 1.33;
+	}
+	
+	&-lg {
+		width: $extra-button-lg-size;
+		height: $extra-button-lg-size;
+		padding: $extra-button-padding;
+		border-radius: 35px;
+		font-size: 24px;
+		line-height: 1.33;
+	}
+}
+
+.btn-outline {
+	color: inherit;
+	background-color: transparent;
+	transition: all .5s;
+}
+
+.btn-outline-primary {
+	@include button-outline-variant(color('blue', '500'));
+}
+.btn-outline-info {
+	@include button-outline-variant(color('cyan', '500'));
+}
+.btn-outline-success {
+	@include button-outline-variant(color('green', '500'));
+}
+.btn-outline-warning {
+	@include button-outline-variant(color('yellow', '500'));
+}
+.btn-outline-danger {
+	@include button-outline-variant(color('red', '500'));
+}

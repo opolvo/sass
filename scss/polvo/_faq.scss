@@ -1,0 +1,7 @@
+/* FAQ styles */
+.question {
+	margin-top: 25px;
+	&:first {
+		background-color: red;
+	}
+}
