@@ -1,0 +1,7 @@
+// Colors shortcuts
+
+// retrieve color from $colors map ie. `color('red', '500')`
+@function color($color-name, $color-variant) {
+	// map inception
+	@return map-get(map-get($material-colors, $color-name), $color-variant);
+}
