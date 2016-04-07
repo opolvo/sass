@@ -6,7 +6,7 @@
 		top: 50%;
 		left: 50%;
 		z-index: 3;
-		color: #fff;
+		color: color('neutral', 'white');
 		text-align: center;
 		text-shadow: 1px 1px 0 rgba(0,0,0,.75);
 		-webkit-transform: translate3d(-50%,-50%,0);
@@ -16,7 +16,7 @@
 		transform: translate3d(-50%,-50%,0);
 	}
 
-	.carousel-inner .item {
+	.carousel-inner {
 		.item {
 			opacity: 0;
 			-webkit-transition-property: opacity;
