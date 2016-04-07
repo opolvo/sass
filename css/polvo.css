@@ -1,22 +1,22 @@
 @import url(https://fonts.googleapis.com/css?family=Dosis:400,200,700);
 body {
   font-family: "Dosis", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: color("neutral", "polvo");
-  background-color: color("neutral", "white"); }
+  color: #565a5c;
+  background-color: #ffffff; }
 
-hr {
+.hr {
   margin: 20px 0;
   border: 0;
   border-top: 1px solid #f5f5f5; }
-  hr-sm, hr-md {
+  .hr-sm, .hr-md {
     margin: 20px auto; }
-  hr-sm {
-    width: 480px; }
-  hr-md {
+  .hr-sm {
     width: 280px; }
-  hr-thick {
+  .hr-md {
+    width: 480px; }
+  .hr-thick {
     border-top: 3px solid #424242; }
-  hr-inverse {
+  .hr-inverse {
     border-color: #f5f5f5; }
 
 .heading {
