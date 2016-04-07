@@ -2,38 +2,38 @@
 // Scaffolding
 // --------------------------------------------------
 
-
 body {
-	font-family: $font-family-base;
-	color: $polvo-text-color;
-	background-color: $polvo-body-bg;
+	font-family: $polvo-font-family-base;
+	color: $polvo-text;
+	background-color: $polvo-bg;
 }
 
-// Horizontal rules
 
+// Horizontal rules
+// -------------------------
 hr {
 	margin: 20px 0;
 	border: 0;
-	border-top: 1px solid #eee;
-}
-
-.hr-short,
-.hr-medium {
-	margin: 20px auto;
-}
-
-.hr-medium {
-	width: 480px;
-}
-
-.hr-short {
-	width: 280px;
-}
-
-.hr-thick {
-	border-top: 3px solid #eee;
-}
-
-.hr-inverse {
-	border-color: #555;
+	border-top: 1px solid color('grey', '100');
+	
+	&-sm,
+	&-md {
+		margin: 20px auto;
+	}
+	
+	&-sm {
+		width: 480px;
+	}
+	
+	&-md {
+		width: 280px;
+	}
+	
+	&-thick {
+		border-top: 3px solid color('grey', '800');
+	}
+	
+	&-inverse {
+		border-color: color('grey', '100');
+	}
 }
