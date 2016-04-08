@@ -1,14 +1,9 @@
-//@import url(https://fonts.googleapis.com/css?family=Raleway:100,300,500,700);
-@import url(https://fonts.googleapis.com/css?family=Dosis:400,200,700);
+@import url(https://fonts.googleapis.com/css?family=Raleway:100,300,500,700);
+//@import url(https://fonts.googleapis.com/css?family=Dosis:200,400,700);
 
 // Core variables and mixins
 @import "polvo/variables";
 @import "polvo/mixins";
-
-// Reset and dependencies
-//@import "bootstrap/normalize";
-//@import "bootstrap/print";
-//@import "bootstrap/glyphicons";
 
 // Core CSS
 @import "polvo/scaffolding";
@@ -17,13 +12,10 @@
 // Components
 @import "polvo/buttons";
 @import "polvo/cards";
-@import "polvo/navbar";
-@import "polvo/panels";
-
-// Pages
-@import "polvo/faq";
 @import "polvo/footer";
 @import "polvo/hero-carousel";
+@import "polvo/navbar";
+@import "polvo/panels";
 
 // Utility classes
 @import "polvo/utilities";
