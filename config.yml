@@ -23,17 +23,19 @@ database:
   checkConnectionWhileIdle: false
 
 
-#logging:
-#  polvo.pplural: DEBUG
-#  org.hibernate.SQL: ALL
+logging:
+  loggers:
+    polvo.pplural: DEBUG
+    org.hibernate.SQL: ALL
+  appenders:
+    - type: console
 
 
 server:
-#  softNofileLimit: 1000
-#  hardNofileLimit: 1000
-  applicationConnectors:
-    - type: http
-      port: 8080
-  adminConnectors:
-    - type: http
-      port: 8081
+  type: simple
+
+  applicationContextPath: /
+  #adminContextPath: /admin # If you plan to use an admin path, you'll need to also use non-root app path
+  connector:
+    type: http
+    port: 8080
