@@ -1,5 +1,7 @@
 package polvo.pplural.resources;
 
-public class PersonResouce {
+public class PersonResouce extends BaseResouce {
+	
+	
 
 }
