@@ -1,0 +1,68 @@
+$transiton: all 0.65s;
+
+.navbar-pplural {
+	background-color: transparent;
+	border-color: transparent;
+	-webkit-transition: $transiton;
+	-moz-transition: $transiton;
+	transition: $transiton;
+	min-height: 80px;
+	
+	.navbar-brand {
+		color: color('grey', '100');
+		font-size: 30px;
+		font-weight: 700;
+		line-height: 50px;
+		height: 80px;
+		
+		&:hover,
+		&:focus {
+			color: map-get(map-get($material-colors, 'grey'), '200');
+			background-color: transparent;
+		}
+		
+		img {
+			width: 42px;
+			display: inline;
+		}
+	}
+	
+	.navbar-text {
+		color: color('grey', '200');
+	}
+}
+
+@media (min-width: $screen-md-min) {
+	.affix {
+		background-color: color('blue-grey', '700');
+		/*opacity: 0.925;*/
+		/*border-color: rgba(34, 34, 34, 0.05);*/
+		min-height: 50px;
+	
+		.navbar-header .navbar-brand {
+			color: color('grey', '100');
+			font-size: 18px;
+			line-height: 20px;
+			height: 50px;
+			
+			&:hover,
+			&:focus {
+				color: color('grey', '200');
+			}
+			
+			img {
+				width: 24px;
+			}
+		}
+		
+		.nav > li > a,
+		.nav > li > a:focus {
+			color: #222222;
+		}
+		
+		.nav > li > a:hover,
+		.nav > li > a:focus:hover {
+			color: #f05f40;
+		}
+	}
+}

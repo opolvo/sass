@@ -1,0 +1,41 @@
+database:
+  driverClass: com.mysql.jdbc.Driver
+  user: opolvo
+  password: fanipituchasimba
+  url: jdbc:mysql://mysql524.umbler.com:41890/polvo-dev
+  properties:
+    charSet: UTF-8
+    hibernate.dialect: org.hibernate.dialect.MySQLDialect
+  
+  # the maximum amount of time to wait on an empty pool before throwing an exception
+  maxWaitForConnection: 1s
+
+  # the SQL query to run when validating a connection's liveness
+  validationQuery: "/* MyApplication Health Check */ SELECT 1"
+
+  # the minimum number of connections to keep open
+  minSize: 8
+
+  # the maximum number of connections to keep open
+  maxSize: 32
+
+  # whether or not idle connections should be validated
+  checkConnectionWhileIdle: false
+
+
+logging:
+  loggers:
+    polvo.pplural: DEBUG
+    org.hibernate.SQL: ALL
+  appenders:
+    - type: console
+
+
+server:
+  type: simple
+
+  applicationContextPath: /
+  #adminContextPath: /admin # If you plan to use an admin path, you'll need to also use non-root app path
+  connector:
+    type: http
+    port: 8080
