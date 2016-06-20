@@ -348,8 +348,14 @@ $polvo-cta:				#41724d;
 //
 //## Font, line-height, and color for body text, headings, and more.
 
-$font-family-sans-serif:		'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
-$polvo-font-family-base:		$font-family-sans-serif !default;
+$polvo-font-family-base:		'Raleway', "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$polvo-font-family-serif:		'Cormorant', serif;
+
+$font-size-xs: 14px;
+$font-size-sm: 18px;
+$font-size-md: 24px;
+$font-size-lg: 36px;
+$font-size-xl: 48px;
 
 //$font-size-h1:				floor(($font-size-base * 2.6)) !default; // ~36px
 //$font-size-h2:				floor(($font-size-base * 2.15)) !default; // ~30px
@@ -388,7 +394,7 @@ $card-deck-margin:         .625rem !default;
 //== Utilities
 //
 //## Spacers
-$space-sm:					20px;
+$space-sm:					25px;
 $space-md:					$space-sm * 2;
 $space-lg:					$space-md * 2;
 
