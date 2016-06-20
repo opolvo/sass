@@ -1,4 +1,4 @@
-package polvo.pplural.views;
+package polvo.plural.views;
 
 import io.dropwizard.views.View;
 

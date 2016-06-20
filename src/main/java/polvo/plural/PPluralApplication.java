@@ -1,11 +1,12 @@
-package polvo.pplural;
+package polvo.plural;
 
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.hibernate.HibernateBundle;
 import io.dropwizard.setup.Environment;
-import polvo.pplural.api.Person;
+import polvo.plural.api.Person;
+import polvo.plural.resources.ThingResouce;
 
 public class PPluralApplication extends Application<PPluralConfiguration> {
 	
@@ -28,7 +29,7 @@ public class PPluralApplication extends Application<PPluralConfiguration> {
 		this.configuration = configuration;
 		
 		/* Resources */
-//		environment.jersey().register(new OrderResource());
+		environment.jersey().register(new ThingResouce());
 //		System.out.println(hibernateBundle.getSessionFactory());
 //		environment.jersey().register(new PersonResource(new PersonDao(hibernateBundle.getSessionFactory())));
 
