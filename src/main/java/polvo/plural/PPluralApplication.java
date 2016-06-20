@@ -6,7 +6,8 @@ import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.hibernate.HibernateBundle;
 import io.dropwizard.setup.Environment;
 import polvo.plural.api.Person;
-import polvo.plural.resources.ThingResouce;
+import polvo.plural.resources.TestResource;
+import polvo.plural.resources.ThingResource;
 
 public class PPluralApplication extends Application<PPluralConfiguration> {
 	
@@ -29,7 +30,8 @@ public class PPluralApplication extends Application<PPluralConfiguration> {
 		this.configuration = configuration;
 		
 		/* Resources */
-		environment.jersey().register(new ThingResouce());
+		environment.jersey().register(new TestResource());
+		environment.jersey().register(new ThingResource());
 //		System.out.println(hibernateBundle.getSessionFactory());
 //		environment.jersey().register(new PersonResource(new PersonDao(hibernateBundle.getSessionFactory())));
 

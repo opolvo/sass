@@ -13,7 +13,7 @@ import polvo.plural.api.DataResponse;
 @Path("/api/things")
 @Produces(value=MediaType.APPLICATION_JSON)
 @Consumes(value=MediaType.APPLICATION_JSON)
-public class ThingResouce extends BaseResouce {
+public class ThingResource extends BaseResouce {
 
 	@GET
 	@Path("/")
