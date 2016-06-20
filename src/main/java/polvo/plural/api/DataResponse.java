@@ -1,4 +1,4 @@
-package polvo.pplural.api;
+package polvo.plural.api;
 
 import javax.ws.rs.core.Response.Status;
 
@@ -62,13 +62,13 @@ public class DataResponse {
 		r.setCode(code);
 		
 		if (code == Status.NOT_FOUND.getStatusCode()) {
-			r.setMessage("Register not found.");
+			r.setMessage("Data not found.");
 		} else if (code == Status.FORBIDDEN.getStatusCode()) {
 			r.setMessage("You have no access to this register.");
 		} else if (code == Status.OK.getStatusCode()) {
-			r.setMessage("Everthing is OK! ;)");
+			r.setMessage("OK");
 		} else if (code == Status.INTERNAL_SERVER_ERROR.getStatusCode()) {
-			r.setMessage("Error.");
+			r.setMessage("Error");
 			
 		}
 		

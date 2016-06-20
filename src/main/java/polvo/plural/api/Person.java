@@ -1,4 +1,4 @@
-package polvo.pplural.api;
+package polvo.plural.api;
 
 public class Person {
 	

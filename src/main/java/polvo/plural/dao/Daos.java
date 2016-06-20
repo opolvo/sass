@@ -1,4 +1,4 @@
-package polvo.pplural.dao;
+package polvo.plural.dao;
 
 import java.util.HashMap;
 import java.util.Map;
