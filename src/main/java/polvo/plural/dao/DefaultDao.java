@@ -1,4 +1,4 @@
-package polvo.pplural.dao;
+package polvo.plural.dao;
 
 import io.dropwizard.hibernate.AbstractDAO;
 

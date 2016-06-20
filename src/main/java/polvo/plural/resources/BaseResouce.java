@@ -1,4 +1,4 @@
-package polvo.pplural.resources;
+package polvo.plural.resources;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;

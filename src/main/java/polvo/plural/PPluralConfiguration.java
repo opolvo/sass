@@ -1,4 +1,4 @@
-package polvo.pplural;
+package polvo.plural;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotNull;

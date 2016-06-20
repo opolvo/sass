@@ -1,12 +1,12 @@
-package polvo.pplural;
+package polvo.plural;
 
 import io.dropwizard.Application;
 import io.dropwizard.assets.AssetsBundle;
 import io.dropwizard.db.DataSourceFactory;
 import io.dropwizard.hibernate.HibernateBundle;
 import io.dropwizard.setup.Environment;
-import polvo.pplural.api.Person;
-import polvo.pplural.resources.ThingResouce;
+import polvo.plural.api.Person;
+import polvo.plural.resources.ThingResouce;
 
 public class PPluralApplication extends Application<PPluralConfiguration> {
 	
